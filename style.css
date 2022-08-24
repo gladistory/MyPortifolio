@@ -549,12 +549,38 @@ a.btn,
   transition: all 300ms ease-in-out;
 }
 
+.btn-services {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.btn-serv,
+.btn-port {
+  display: flex;
+  padding: 1rem 8rem;
+  background-color: #4c00ff;
+  color: #fff;
+  border-radius: 5rem;
+  border: 2px solid #4c00ff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease-in-out;
+}
+
 a.btn:hover,
-.btn-form:hover {
+.btn-form:hover,
+.btn-port:hover {
   transform: translateY(-3px);
   background-color: transparent;
   color: inherit;
 }
+
+.btn-serv:hover {
+  transform: translateY(-3px);
+  background-color: transparent;
+  color: #fff;
+}
+
 a.btn:active,
 .btn-form:active {
   transform: translateY(0);
@@ -701,6 +727,18 @@ a.btn:active,
   border-bottom: 4px solid transparent;
   transition: all 300ms ease-in-out;
   height: 220px;
+}
+
+@media only screen and (min-width: 768px) {
+  .team {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .team {
+    height: 220px;
+  }
 }
 
 .team .img-cover {
